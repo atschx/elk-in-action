@@ -1,1 +1,1 @@
-<img src="./cover.jpg" width="185" height ="260" />
+<img src="./cover.jpg" width="1850" height ="2600" />
