@@ -1,8 +1,1 @@
-# elk-in-action
-
-Intro
-
-一步一步介
-
-![elk](./cover.jpg)
-
+<img src="./cover.jpg" width="185" height ="260" />
