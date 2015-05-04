@@ -1,10 +1,5 @@
 {
     "gitbook": "2.x.x",
     "plugins": [],
-    "links": {
-        "sidebar": {
-            "About Me": "http://www.atschx.com"
-        }
-    },
     "pluginsConfig": {}
 }
