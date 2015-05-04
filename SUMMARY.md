@@ -1,6 +1,6 @@
 # 目录
 
-* [elk](intro/README.md)
+* [elk，less is more](intro/README.md)
  * [what's this](intro/what.md)
  * [why this](intro/why.md)
  * [how](intro/how.md)
