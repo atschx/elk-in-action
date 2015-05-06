@@ -8,4 +8,3 @@ shipper等价于应用机器上的agent，通过监听`事件`统一规整到Bro
 一个符合SLA协议的部署结构大致可以是这样的，官方参考。
 
 <img alt="logstash" src="http://7xidkg.com1.z0.glb.clouddn.com/logstash-architecture-final.png" width="572" height="323" />
-
