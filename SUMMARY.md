@@ -7,7 +7,7 @@
 
 * [logstash](logstash/README.md)
  * [基本思想](logstash/aboutlog.md)
- * [日志收集](logstash/shipper.md)
+ * [角色模型](logstash/roles.md)
 
 * [elasticsearch](elasticsearch/README.MD)
  * [背景介绍](elasticsearch/background.md)
