@@ -25,3 +25,22 @@ java.lang.ArithmeticException: / by zero
         at junit.framework.TestSuite.runTest(TestSuite.java:230)
         at junit.framework.TestSuite.run(TestSuite.java:225)
 ````
+基于filter插件中的multiline和grok进行数据提取
+
+```
+input {stdin {}}
+filter {
+ multiline {
+   pattern => "^%{TIMESTAMP_ISO8601}"
+   negate => true
+   what => "previous"
+ }
+ grok{
+  match => {"message" =>["%{TIMESTAMP_ISO8601:rec_time}│ß│%{NOTSPACE:logger}│ß│%{NOTSPACE:thread_name}│ß│%{NOTSPACE:loglevel}│ß│%{NOTSPACE:module}│ß│%{NOTSPACE:class_method}│ß│%{DATA:msg_info}│ß│\n%{GREEDYDATA:first_stack}"]}
+ }
+}
+output {
+  stdout { codec => rubydebug }
+}
+
+````
