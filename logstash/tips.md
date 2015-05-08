@@ -25,8 +25,7 @@ java.lang.ArithmeticException: / by zero
         at junit.framework.TestSuite.runTest(TestSuite.java:230)
         at junit.framework.TestSuite.run(TestSuite.java:225)
 ````
-基于filter插件中的multiline和grok进行数据提取
-
+基于filter插件中的`multiline`和`grok`进行数据提取
 ```
 input {stdin {}}
 filter {
@@ -42,5 +41,4 @@ filter {
 output {
   stdout { codec => rubydebug }
 }
-
 ````
