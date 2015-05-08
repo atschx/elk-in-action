@@ -36,6 +36,7 @@ filter {
  }
  grok{
   match => {"message" =>["%{TIMESTAMP_ISO8601:rec_time}│ß│%{NOTSPACE:logger}│ß│%{NOTSPACE:thread_name}│ß│%{NOTSPACE:loglevel}│ß│%{NOTSPACE:module}│ß│%{NOTSPACE:class_method}│ß│%{DATA:msg_info}│ß│\n%{GREEDYDATA:first_stack}"]}
+   remove_field => [ "message" ]
  }
 }
 output {
@@ -43,9 +44,7 @@ output {
 }
 ````
 
-> 日志收集起来的目的是为了可视化的统计程序报错，用于持续改善。真正的定位问题和解决问题，属于另一个范畴。因此，在本例中`message`字段是多余的。
-
-数据如下，message可直接删除掉
+> 日志收集起来的目的是为了可视化的统计程序报错，用于持续改善。真正的定位问题和解决问题，属于另一个范畴。`message`字段是`multiline`插件的产物，成功`grok`之后，建议移除message字段。
 
 ````
 {
