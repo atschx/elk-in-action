@@ -8,6 +8,7 @@
 * [logstash](logstash/README.md)
  * [基本思想](logstash/aboutlog.md)
  * [角色模型](logstash/roles.md)
+ * [案例分享](logstash/tips.md)
 
 * [elasticsearch](elasticsearch/README.MD)
  * [背景介绍](elasticsearch/background.md)
