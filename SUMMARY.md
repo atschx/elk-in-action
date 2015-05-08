@@ -11,6 +11,4 @@
  * [案例分享](logstash/tips.md)
 
 * [elasticsearch](elasticsearch/README.MD)
- * [背景介绍](elasticsearch/background.md)
- * [部署说明](elasticsearch/deploy.md)
- * [相关插件](elasticsearch/plugins.md)
+ * [实战技巧](elasticsearch/tips.md)
