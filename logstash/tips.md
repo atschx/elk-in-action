@@ -4,6 +4,16 @@
 * 删除信息冗余的字段(eg:`grok`插件中的`messages`)
 * 推荐基于`broker`模式进行中心化的日志收集
 
+配置文件
+========
+
+> 可以指定一个配置文件，也可以指定一个文件夹
+
+```
+ ./bin/logstash -f xxx.conf
+ ./bin/logstash -f /xxx/xxx/
+```
+
 java异常信息
 ============
 
